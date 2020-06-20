@@ -1,5 +1,5 @@
 """
-WSGI config for dz_project project.
+WSGI config for dz_projects project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
