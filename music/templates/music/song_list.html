@@ -1,0 +1,9 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    {% for s in songs %}
+        <div>
+            <p>{{ s.song_name }}</p>
+            <p>{{ s.artist }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

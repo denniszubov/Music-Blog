@@ -9,6 +9,7 @@ class BlogPost(models.Model):
     content = models.CharField(max_length=256)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     date_posted = models.DateTimeField(default=timezone.now)
+    # tags = list field
 
     def __str__(self):
         return f"{self.title} by {self.author}"
