@@ -12,3 +12,4 @@ def blog(request):
 class BlogPostListView(ListView):
     model = BlogPost
     template_name = "blog/blog_posts.html"
+    context_object_name = "blog_posts"
