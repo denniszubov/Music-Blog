@@ -1,9 +1,15 @@
 {% extends "blog/base.html" %}
 {% block content %}
     {% for s in songs %}
-        <div>
-            <p>{{ s.song_name }}</p>
-            <p>{{ s.artist }}</p>
-        </div>
+        <article class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <a href="#" class="mr-2">{{ s.artist }}</a>
+                    <small class="text-muted">{{ s.date_uploaded|date:"d-M-Y" }}</small>
+                </div>
+                <h4><a href="#" class="article-title">{{ s.song_name }}</a></h4>
+                <p class="article-content">*Audio Player Here*</p>
+            </div>
+        </article>
     {% endfor %}
 {% endblock %}

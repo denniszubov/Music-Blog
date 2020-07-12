@@ -3,5 +3,5 @@ from .views import SongListView
 
 
 urlpatterns = [
-    path("", SongListView.as_view(), name="song-list"),
+    path("", SongListView.as_view(), name="music-list"),
 ]
