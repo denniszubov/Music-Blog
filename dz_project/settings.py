@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "home.apps.HomeConfig",
     "user.apps.UserConfig",
     "crispy_forms",
+    "tag.apps.TagConfig",
 ]
 
 MIDDLEWARE = [
